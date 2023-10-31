@@ -16,3 +16,14 @@
 - #### Data preparation
   Main point of data preperation in this project is data augmentation. My motivation to use this method were birds images. They are cropped in a way that a bird is more or less in the middle and takes majority of center part of the photo. Data augmentation helps to make images more diverse. I was also worried that 
 same schedule among bird photos would lead to worse performance on test data. It turned out during experiments process that without data augmentation the performance was indeed worse. My hypotesis is that our CNN would "make a conclusion" that the "bird" is a big, colorful area in the middle of a photo.
+
+- #### Architecture and learning process.
+  Current architecture and values of features of CNN model in this project is a result of a long experimental process. At the begining of work I noticed that a key is a size, a number of parameters of the network. Small CNNs performed bad, some of them seemed not to learn anything.
+When I started trying bigger networks I realized that my personal equipmemt doesn't provide me with enough od computational power. After some research I decided to use Google Colab with TP4 environment. It enabled me to find suitable CNN in a resonable time.
+
+I tried changing number of convolutional leyers and way of stacking them. Stacked leyers where demanding when it comes to computations but they didn't give satisfying results. It also turned out that MaxPooling gave better accuracy than AveragePooling.
+
+I also experimented with number of dense leyers. The result surprised me because best performance was obtained by only one dense layer after Flatten leyer. My intuision was that at least two of them are necessery.
+
+
+
