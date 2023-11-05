@@ -15,7 +15,7 @@
 
 - #### Data preparation
   The main point of data preparation in this project is data augmentation. My motivation to use this method was birds images. They are cropped in a way that a bird is more or less in the middle and takes the majority of the center part of the photo. Data augmentation helps to make images more diverse. I was also worried that 
-same schedule among bird photos would lead to worse performance on test data. It turned out during experiment process that without data augmentation the performance was indeed worse. My hypothesis is that our CNN would "make a conclusion" that the "bird" is a big, colorful area in the middle of a photo.
+same schedule among bird photos would lead to worse performance on test data. It turned out during experiment process that without data augmentation the performance was indeed worse. My hypothesis is that our CNN would "make a conclusion" that the "bird" is a big, colorful area in the middle of a photo. In addition, photos show only one bird, not a pair or a group. 
 
 - #### Architecture and learning process.
   Current architecture and values of features of CNN model in this project is a result of a long experimental process. At the beginning of work, I noticed that a key is a size, a number of parameters of the network. Small CNNs performed worse, some of them seemed not to learn anything.
